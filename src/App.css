@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+.nav{
+
+   
+    width: 100%;
+    background: grey;
+    padding: 1.5rem;
+    color: rgba(255, 254, 254, 0.797);
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 0 0 1rem  black;
+    
+   
+   
+}
+
+ul a,.nav a{
+    text-decoration: none;
+}
+.heading-nav{
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.2rem 1rem black ;
+    color: rgba(255, 254, 254, 0.797);
+    
+   
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+}
+.nav-li{
+    margin: 0 2rem;
+    list-style: none;
+    font-size: 2rem;
+    color:rgba(255, 254, 254, 0.929) ;
+    transition: 0.3s;
+}
+.nav-li:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 1rem  black;
+}
+
+
+.list-h1,.list-h2{
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.889);
+    text-align: center;
+    width: 100%;
+    background-color: rgba(76, 75, 75, 0.929);
+}
+form{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+form input{
+    width: 80%;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius: 3rem 0 0 3rem;
+    border: none;
+}
+
+
+form button{
+    padding: 1rem;
+    padding-right: 1.5rem;
+    border-radius: 0 3rem 3rem 0 ;
+    border: none;
+    background-color: rgba(76, 75, 75, 0.929);
+    color: rgba(255, 255, 255, 0.889);
+    
+}
+
+.list-div{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+     margin: 2rem 3rem ;
+}
+.list-div::after{
+    content: "";
+    width:64rem ;
+}
+
+.task{
+   
+    background-color: rgba(255, 254, 254, 0.797);
+    margin-top: 2rem;
+    border-radius: 2rem;
+    border: 2px  solid rgb(164, 164, 164);
+    font-size: 1.5rem;
+    margin: 1rem;
+    max-width: 30rem;
+  
+   
+    box-shadow: 0.1rem 0.3rem 1.5rem rgba(0, 0, 0, 0.716);
+    
+}
+.task-div{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem;
+    
+}
+.task-div p{
+    text-align: center;
+   margin-right: 2rem;
+    word-break: break-all;
+
+}
+.task div div{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.btn-task{
+    font-size: 0.8rem;
+   
+    border: none;
+    padding: 0.4rem 0;
+    
+    cursor: pointer;
+   
+    
+   
+}
+.btn-del{
+    background-color:#0000007e;
+    width: 6.8rem;
+    border-radius: 1.5rem 0 0  0;
+  
+}
+.btn-done-del{
+    background-color:#0000007e;
+    width: 6.8rem;
+    border-radius: 1.5rem 0 1.5rem  0;
+}
+.btn-progress{
+    background-color:#6c6c6c1f;
+    border-radius: 0 0 1.5rem 0 ;
+    
+}
+
+.task h2 {
+  padding: 0.3rem;
+  text-align: center;
+    
+}
+.task-time{
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    color: rgba(71, 71, 71, 0.716);
+}
+
+.div-table{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hisTable{
+    margin: 0;
+    border: 0.2rem solid rgb(0, 0, 0,0.7);
+    width: 90%;
+}
+thead>td{
+    font-weight: bold;
+}
+thead > td ,tr > td {
+    border: rgba(76, 75, 75, 0.929) solid 2px;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.7rem;
+}
+
+.list-h2{
+    margin: 2rem ;
+  font-size: 2.5rem;
+}
+.form-del{
+   
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(4px);
+    display: none;
+    
+}
+
+.delPgform{
+    padding: 0.5rem 3rem 1.5rem  ;
+    background-color:rgba(226, 226, 226, 0.716);
+    border-radius: 3rem 0 ;
+    font-size: 1.5rem;
+    color: rgba(80, 80, 80, 0.797);
+    transform: skew(-2deg);
+    box-shadow: 0.1rem 0.1rem 1rem 0.3rem rgb(87, 87, 87);
+
+}
+
+.del-reason{
+    width: 100%;
+    border-radius: 0;
+    margin: 1rem  0;
+    background-color: rgba(226, 226, 226, 0.716);
+}
+.btndel{
+    border-radius: 0;
+    width: 45%;
+    padding: 0;
+    text-align: center;
+
+}
+.btndel-no{
+    margin-left: 3.4rem;
+}
+.task-td{
+    word-break: break-all;
+}
+.div-table button{
+    align-self: flex-end;
+    margin: 0 4rem 1.5rem;
+    border-radius: 0rem 2rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background: rgba(71, 71, 71, 0.716);
+    color: rgba(255, 254, 254, 0.97);
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+
