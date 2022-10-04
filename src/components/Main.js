@@ -34,20 +34,16 @@ export default function Main() {
     const inprogress = false;
     e.target[0].value = "";
 
-    const add = async () => {
-      await addDoc(taskCollection, {
-        task,
-        date,
-        time,
-        timeinms,
-        progressTime,
-        doneTime,
-        isdone,
-        inprogress,
-      });
-    };
-
-    add();
+    addDoc(taskCollection, {
+      task,
+      date,
+      time,
+      timeinms,
+      progressTime,
+      doneTime,
+      isdone,
+      inprogress,
+    });
   };
 
   useEffect(() => {
@@ -105,10 +101,7 @@ export default function Main() {
             ></List>
           }
         ></Route>
-        <Route
-          path="/inprogress"
-          element={<Inprogress></Inprogress>}
-        ></Route>
+        <Route path="/inprogress" element={<Inprogress></Inprogress>}></Route>
         <Route path="/done" element={<Done></Done>}></Route>
         <Route path="/history" element={<History></History>}></Route>
       </Routes>
